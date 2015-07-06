@@ -31,7 +31,7 @@ import javax.swing.*;		//JFrame, Timer...
  * 		-example: dog --> ogday
  * 				
  ***********************************************************************************/
-public class TextConverter extends JFrame
+public class Arora_TextConverter extends JFrame
 {
 	public static final int WINDOW_WIDTH = 500;		// Initial window width
 	public static final int WINDOW_HEIGHT = 300;	// Initial window height
@@ -51,14 +51,14 @@ public class TextConverter extends JFrame
 	
 	public static void main(String[] rags)
 	{
-		TextConverter window = new TextConverter();
+		Arora_TextConverter window = new Arora_TextConverter();
 	}
 
 	/**
 	 * Create the window contents and arrange for callbacks when the
 	 *  buttons are clicked.
 	 */
-	public TextConverter()
+	public Arora_TextConverter()
 	{
 		// Set up the window basics
 		setTitle("Text Converter");
@@ -344,7 +344,7 @@ public class TextConverter extends JFrame
  ***********************************************************************************/
 class ContentsOfWindow extends JPanel implements ActionListener
 {
-	private TextConverter tc;			// TextConverter object containing
+	private Arora_TextConverter tc;			// TextConverter object containing
 										//	the conversion methods to call
 	private JButton buttonToMale;		// Button for converting to masculine
 	private JButton buttonToFemale;		// Button for converting to feminine
@@ -361,7 +361,7 @@ class ContentsOfWindow extends JPanel implements ActionListener
 	 * 					methods to call to do the actual text conversion
 	 */
 	
-	public ContentsOfWindow(TextConverter tcIn)
+	public ContentsOfWindow(Arora_TextConverter tcIn)
 	{
 		// Save the pointer to the TextConverter object. We need it since the
 		//	methods defining the actions to take when the buttons are clicked
